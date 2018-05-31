@@ -1,0 +1,21 @@
+<div>Students Available</div>
+
+<table>
+  <tr *ngFor="let student of students">
+    <td>{{ student.studentId }}</td>
+    <td>{{ student.studentName }}</td>
+    <button (click)="deleteStudent(student)">Delete </button>
+  </tr>
+</table>
+
+<div>Add Student
+  <div id = "addStudent">
+    <span>Student Name : </span> <input [(ngModel)]="newStudent.studentName" placeholder="name">
+    <span>Section Id : </span> <input [(ngModel)]="newStudent.sectionId" placeholder="SectId">
+    <span>User Id : </span> <input [(ngModel)]="newStudent.userId" placeholder="userId">
+    <span>Roll Number : </span> <input [(ngModel)]="newStudent.rollNumber" placeholder="roll Number">
+    <span>Standard : </span> <input [(ngModel)]="newStudent.standard" placeholder="standard">
+
+    <button (click) = "saveStudent(newStudent)">Add </button>
+
+</div>
