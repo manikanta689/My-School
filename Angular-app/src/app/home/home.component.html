@@ -1,0 +1,118 @@
+<nav class="navbar navbar-inverse sidebar" role="navigation" [ngClass]="collapseMenu ? 'collapse-menu' : 'expand-menu'">
+  <div class="container-fluid">
+    <div id="bs-sidebar-navbar-collapse-1">
+      <div class="hamberg-wrapper"><i class="fa fa-bars" (click)="collapseMenu = !collapseMenu"></i></div>
+      <div id="bs-sidebar-navbar-collapse-1">
+        <ul id="grouplist" class="nav navbar-nav">
+          <li><span>GENERAL</span></li>
+          <li class="menu-item" [ngClass] = "selectedItem === 'Admissions'? 'active' : ''"><a href="void:javascript(0)" id="btn-1" data-toggle="collapse" data-target="#submenu1" aria-expanded="false">Admissions<i class="pull-right fa fa-angle-down"></i></a>
+            <ul class="nav collapse" id="submenu1" role="menu" aria-labelledby="btn-1">
+              <li><a>Enquiry</a></li>
+              <li><a>Admission</a></li>
+            </ul>
+          </li>
+          <li class="menu-item" [ngClass] = "selectedItem === 'Enrollment'? 'active' : ''"><a href="void:javascript(0)" id="btn-1" data-toggle="collapse" data-target="#submenu2" aria-expanded="false">Enrollment<i class="pull-right fa fa-angle-down"></i></a>
+            <ul class="nav collapse" id="submenu2" role="menu" aria-labelledby="btn-2">
+              <li><a>Promote</a></li>
+              <li><a>Allot Sections</a></li>
+              <li><a>Update Enrollments</a></li>
+            </ul>
+          </li>
+          <li class="menu-item" [ngClass] = "selectedItem === 'Details'? 'active' : ''"><a href="void:javascript(0)" id="btn-1" data-toggle="collapse" data-target="#submenu3" aria-expanded="false">Details<i class="pull-right fa fa-angle-down"></i></a>
+            <ul class="nav collapse" id="submenu3" role="menu" aria-labelledby="btn-1">
+              <li><a>Student Details</a></li>
+              <li><a>Employee Details</a></li>
+            </ul>
+          </li>
+          <li class="menu-item" [ngClass] = "selectedItem === 'Teacher tasks'? 'active' : ''"><a href="void:javascript(0)" id="btn-1" data-toggle="collapse" data-target="#submenu4" aria-expanded="false">Teacher tasks<i class="pull-right fa fa-angle-down"></i></a>
+            <ul class="nav collapse" id="submenu4" role="menu" aria-labelledby="btn-2">
+              <li><a>Student Attendance</a></li>
+              <li><a>Create Student Dairy/Log</a></li>
+              <li><a>View Student Dairy/Log</a></li>
+            </ul>
+          </li>
+          <li class="menu-item" [ngClass] = "selectedItem === 'Notifications'? 'active' : ''" ><a href="void:javascript(0)" id="btn-1" data-toggle="collapse" data-target="#submenu5" aria-expanded="false">Notifications<i class="pull-right fa fa-angle-down"></i></a>
+            <ul class="nav collapse" id="submenu5" role="menu" aria-labelledby="btn-1">
+              <li><a>Recent Notifications</a></li>
+              <li><a>Create Notifications</a></li>
+            </ul>
+          </li>
+          <li class="menu-item" [ngClass] = "selectedItem === 'Time Tables'? 'active' : ''"><a href="void:javascript(0)" id="btn-1" data-toggle="collapse" data-target="#submenu6" aria-expanded="false">Time Tables<i class="pull-right fa fa-angle-down"></i></a>
+            <ul class="nav collapse" id="submenu6" role="menu" aria-labelledby="btn-2">
+              <li><a>Create/Modify Time Table</a></li>
+              <li><a>View Time Table</a></li>
+            </ul>
+          </li>
+          <li class="menu-item" [ngClass] = "selectedItem === 'Exams'? 'active' : ''"><a href="void:javascript(0)" id="btn-1" data-toggle="collapse" data-target="#submenu7" aria-expanded="false">Exams<i class="pull-right fa fa-angle-down"></i></a>
+            <ul class="nav collapse" id="submenu7" role="menu" aria-labelledby="btn-2">
+              <li><a>Exams</a></li>
+              <li><a>Exams Results</a></li>
+            </ul>
+          </li>
+          <li><span>ADMIN ACTIVITIES</span></li>
+          <li class="menu-item" [ngClass] = "selectedItem === 'Setup'? 'active' : ''"><a href="void:javascript(0)" id="btn-1" data-toggle="collapse" data-target="#submenu8" aria-expanded="false">Setup<i class="pull-right fa fa-angle-down"></i></a>
+            <ul class="nav collapse" id="submenu8" role="menu" aria-labelledby="btn-1">
+              <li><a>Segments</a></li>
+              <li><a>Courses</a></li>
+              <li><a>Subjects</a></li>
+              <li><a>Academic Year</a></li>
+              <li><a>Sections</a></li>
+              <li><a>Exams Grades</a></li>
+              <li  class="menu-item" [ngClass] = "selectedItem === 'Transport'? 'active' : ''"><a href="void:javascript(0)" id="btn-1" data-toggle="collapse" data-target="#submenu10" aria-expanded="false">Transport<i class="pull-right fa fa-angle-down"></i></a>
+                <ul class="nav collapse" id="submenu10" role="menu" aria-labelledby="btn-2">
+                  <li><a>Transport Route</a></li>
+                  <li><a>Transport Stop</a></li>
+                </ul>
+              </li>
+              <li><a>Template</a></li>
+            </ul>
+          </li>
+          <li class="menu-item" [ngClass] = "selectedItem === 'Fee Management'? 'active' : ''"><a href="void:javascript(0)" id="btn-1" data-toggle="collapse" data-target="#submenu11" aria-expanded="false">Fee Management<i class="pull-right fa fa-angle-down"></i></a>
+            <ul class="nav collapse" id="submenu11" role="menu" aria-labelledby="btn-1">
+              <li><a>Fee Components</a></li>
+              <li><a>View Fee Components</a></li>
+              <li><a>Assign Fee Components</a></li>
+              <li><a>Collect Fee</a></li>
+              <li><a>View Fee Transactions</a></li>
+              <li><a>View Fee Invoices</a></li>
+              <li><a>View Reverted Fee Invoices</a></li>
+              <li><a>Day Sheet</a></li>
+              <li><a>Day Balances</a></li>
+              <li><a>Fee Payment Details</a></li>
+            </ul>
+          </li>
+          <li class="menu-item" [ngClass] = "selectedItem === 'Users'? 'active' : ''"><a href="void:javascript(0)" id="btn-1" data-toggle="collapse" data-target="#submenu11" aria-expanded="false">Users<i class="pull-right fa fa-angle-down"></i></a>
+            <ul class="nav collapse" id="submenu11" role="menu" aria-labelledby="btn-1">
+              <li><a>All Users</a></li>
+              <li><a>Employee</a></li>
+              <li><a>Student</a></li>
+              <li><a>Parent</a></li>
+              <li><a>ID Cards</a></li>
+              <li><a>Outing Pass</a></li>
+            </ul>
+          </li>
+          <li  class="menu-item" [ngClass] = "selectedItem === 'Staff'? 'active' : ''"><a href="void:javascript(0)" id="btn-1" data-toggle="collapse" data-target="#submenu11" aria-expanded="false">Staff<i class="pull-right fa fa-angle-down"></i></a>
+            <ul class="nav collapse" id="submenu11" role="menu" aria-labelledby="btn-1">
+              <li><a>Employee</a></li>
+              <li><a>Employee Attendance</a></li>
+            </ul>
+          </li>
+          <li  class="menu-item" [ngClass] = "selectedItem === 'SMS'? 'active' : ''"><a href="void:javascript(0)" id="btn-1" data-toggle="collapse" data-target="#submenu11" aria-expanded="false">SMS<i class="pull-right fa fa-angle-down"></i></a>
+            <ul class="nav collapse" id="submenu11" role="menu" aria-labelledby="btn-1">
+              <li><a>Send SMS</a></li>
+              <li><a>SMS Portal</a></li>
+            </ul>
+          </li>
+          <li><span>OTHER</span></li>
+            <li class="menu-item" [ngClass] = "selectedItem === 'Finance'? 'active' : ''"><a>Finance</a></li>
+            <li class="menu-item" [ngClass] = "selectedItem === 'Dashboards/Reports'? 'active' : ''"><a>Dashboards/Reports</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="main">
+  <app-header></app-header>
+
+  <router-outlet></router-outlet>
+</div>
