@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
+import { LoginComponent } from './login/login.component';
 
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -28,7 +29,8 @@ import { HeaderComponent } from './header/header.component';
     LoginViewComponent,
     NgbdCarouselConfig,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -8,11 +8,15 @@ import { TeacherViewComponent } from './main-layout/teacher-view.component';
 import { AdminComponent } from './main-layout/admin.component';
 import { StudentViewComponent } from './main-layout/student-view.component';
 import { LoginViewComponent } from './main-layout/login-view.component';
-
+import { LoginComponent } from './login/login.component';
 const routes: Routes = [
     {
         path: '',
         component: HomePageComponent,
+    },
+    {
+        path: 'login',
+        component: LoginComponent,
     },
     { path: 'home', component: HomeComponent
         // children: [

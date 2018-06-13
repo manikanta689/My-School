@@ -117,7 +117,8 @@ nav.sidebar.navbar {
 .nav>li{
     width: 100%;
     display: block;
-    a{       
+    a{   
+        padding: 10px 40px;    
        &:hover{
            background: #064669;
         box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0;
@@ -138,8 +139,11 @@ nav.sidebar.navbar {
                 }
             }
             ul{
-                padding: 0 20px;
+                padding: 0;
                 li{
+                    &:hover{
+                            background: #425668;
+                    }
                     a{
                         color: #fff;                    
                     }
@@ -147,7 +151,7 @@ nav.sidebar.navbar {
                             border-left: 1px solid #425668;
                             bottom: 0;
                             content: "";
-                            left: 4px;
+                            left: 28px;
                             position: absolute;
                             top: 0;
                     } 
@@ -156,8 +160,8 @@ nav.sidebar.navbar {
                             bottom: auto;
                             content: "";
                             height: 8px;
-                            left: 0px;
-                            margin-top: 15px;
+                            left: 25px;
+                            margin-top: 16px;
                             position: absolute;
                             right: auto;
                             width: 8px;
